@@ -1,6 +1,7 @@
 package net.zerotodev.api.UserService.dish;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import lombok.Data;
 
@@ -22,7 +23,7 @@ import lombok.Data;
         return delivered ? description +" 먹는다" : description +" 기다린다";
     }
 }
-class KitchenService {
+@Service class KitchenService {
     Flux<Dish> getDishes(){
         return Flux.just(new Dish("김치찌개"),
                 new Dish("떡볶이"),
