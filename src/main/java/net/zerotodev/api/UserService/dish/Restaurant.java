@@ -47,13 +47,4 @@ import lombok.Data;
                 .map(Dish::deliver);
     }
 }
-public class Restaurant {
-    public void subscribe() {
-        AdvancedServer server = new AdvancedServer(new KitchenService());
-        server.doingMyJob().subscribe(
-                dish -> System.out.println(dish),
-                throwable -> System.out.println(throwable)
-        );
-    }
-}
 
