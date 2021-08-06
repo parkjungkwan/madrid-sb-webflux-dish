@@ -26,4 +26,10 @@ class MyUtilTest {
     void test_howLongRemain() {
         System.out.println(myUtil.howLongRemain(LocalDate.now(), "12","25"));
     }
+    @DisplayName("사용한 시간은 얼마인가 ? ")
+    @Test
+    void test_usedTime() {
+        System.out.println(myUtil.usedTime("9", "30","00", "18", "00","00" ));
+    }
+
 }
