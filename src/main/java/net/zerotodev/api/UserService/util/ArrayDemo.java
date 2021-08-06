@@ -9,9 +9,9 @@ public class ArrayDemo {
         Arrays.fill(arr, 7);
         return arr;
     }
-    public int[] copy(int[] param){
+    public int[] copy(int[] param, int initVal, int start, int lenght ){
         int[] arr = new int[5];
-        System.arraycopy(param, 0, arr, 3, 4);
+        System.arraycopy(param, initVal, arr, start, lenght);
         return arr;
     }
 }

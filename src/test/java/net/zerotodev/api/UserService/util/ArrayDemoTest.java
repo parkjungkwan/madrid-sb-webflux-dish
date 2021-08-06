@@ -31,8 +31,10 @@ class ArrayDemoTest {
     @Test
     void copy() {
         String s = "";
-        int[] t1 = new int[]{7,7,7,7,7};
-        int[] t2 = new int[5];
-        //int[] arr = arrayDemo.copy(t1, 0, t2, 1, 3);
+        int[] arr = arrayDemo.copy(new int[]{7,7,7,7,7}, 0, 2, 2);
+        for(int i: arr){
+            s += i;
+        }
+        assertEquals("00770", s);
     }
 }
