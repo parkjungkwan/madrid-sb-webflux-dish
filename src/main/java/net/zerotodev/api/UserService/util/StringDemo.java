@@ -17,6 +17,6 @@ public class StringDemo {
         return s1.compareToIgnoreCase(s2);
     }
     public String removeHyponeInJuminBunho(String juminBunho){
-        return ""; // p.263 로직 작성
+        return juminBunho.replace("-",""); // p.263 로직 작성
     }
 }
