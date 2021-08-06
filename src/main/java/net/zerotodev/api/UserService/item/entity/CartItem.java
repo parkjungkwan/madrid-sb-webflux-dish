@@ -1,7 +1,6 @@
 package net.zerotodev.api.UserService.item.entity;
 
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 
 @Data
 public class CartItem {

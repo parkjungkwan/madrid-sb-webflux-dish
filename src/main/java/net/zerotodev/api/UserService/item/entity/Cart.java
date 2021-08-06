@@ -1,13 +1,12 @@
 package net.zerotodev.api.UserService.item.entity;
 
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 import org.springframework.data.annotation.Id;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+
 public class Cart {
     private @Id String id;
     private List<CartItem> cartItems;
@@ -19,4 +18,5 @@ public class Cart {
         this.id = id;
         this.cartItems = cartItems;
     }
+
 }
