@@ -3,8 +3,10 @@ package net.zerotodev.api.UserService.util;
 import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
 @RequiredArgsConstructor
+@ToString
 @Getter
 class Product{
     private final int productId;
@@ -22,7 +24,9 @@ public class ObjectArray {
         Product p3 = new Product(3, "Apple");
         Product p4 = new Product(4, "Dress");
         Product p5 = new Product(5, "Fairy-tale book");
-
+        for(int i=0; i< cart.length; i++){
+            cart[i] = new Product(i + 1, productNames[i]);
+        }
         return cart;
     }
 }
