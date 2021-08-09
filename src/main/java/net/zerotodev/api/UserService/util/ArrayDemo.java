@@ -14,4 +14,11 @@ public class ArrayDemo {
         System.arraycopy(param, initVal, arr, start, lenght);
         return arr;
     }
+    public int[] createIntegerArray(int start, int end){
+        int len = 0;
+        int[] integerArray = new int[len];
+
+        return integerArray;
+    }
+
 }
