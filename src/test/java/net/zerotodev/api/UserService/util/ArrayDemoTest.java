@@ -40,5 +40,13 @@ class ArrayDemoTest {
     @Test
     void test_createIntegerArray(){
         int[] arr = arrayDemo.createIntegerArray(1, 6);
+        String s = "";
+        // int[] arr = {1, 2, 3, 4, 5}
+        for(int i: arr){
+            // System.out.print(i+"\t");
+            s += i;
+        }
+        assertEquals("12345", s);
     }
+
 }

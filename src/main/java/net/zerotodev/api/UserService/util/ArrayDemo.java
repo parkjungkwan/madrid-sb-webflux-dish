@@ -15,9 +15,13 @@ public class ArrayDemo {
         return arr;
     }
     public int[] createIntegerArray(int start, int end){
-        int len = 0;
+        int len = end - start;
         int[] integerArray = new int[len];
-
+        int j = 0;
+        for(int i = start; i < end; i++){
+            integerArray[j] = i;
+            j++;
+        }
         return integerArray;
     }
 
