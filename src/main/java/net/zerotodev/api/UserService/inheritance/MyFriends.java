@@ -29,7 +29,7 @@ public class MyFriends {
     }
 }
 
-@Data class UnivFriend extends Friend{
+@Data final class UnivFriend extends Friend{
     private String major;
     public UnivFriend(String name, String major, String phone){
         super(name, phone);
@@ -39,9 +39,9 @@ public class MyFriends {
         return String.format("대학동기: %s %s %s", name, major, phone);
     }
 }
-
-@Data class CompFriend extends Friend{
+@Data final class CompFriend extends Friend{
     private String department;
+    private String password;
     public CompFriend(String name, String department, String phone){
         super(name, phone);
         this.department = department;
@@ -50,3 +50,5 @@ public class MyFriends {
         return String.format("직장동료: %s %s %s", name, department, phone);
     }
 }
+
+

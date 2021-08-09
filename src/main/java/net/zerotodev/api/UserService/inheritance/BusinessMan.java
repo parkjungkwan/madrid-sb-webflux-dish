@@ -8,7 +8,7 @@ class Man {
 }
 
 @Data
-class BusinessMan extends Man{
+final class BusinessMan extends Man{
     private final String company;
     private final String position;
 
