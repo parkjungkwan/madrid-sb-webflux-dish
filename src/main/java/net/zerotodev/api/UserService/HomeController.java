@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @RestController
-public class HomeController {
+public final class HomeController {
     @GetMapping("/")
     public String home(){
 

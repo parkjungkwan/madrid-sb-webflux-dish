@@ -1,20 +1,13 @@
 package net.zerotodev.api.UserService.util;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.ToString;
 
-@RequiredArgsConstructor
-@ToString
-@Getter
-class Product{
+@Data final class Product{
     private final int productId;
     private final String description;
 }
 
-public class ObjectArray {
-
+public final class ObjectArray {
     public Product[] createCart(){
         Product[] cart = new Product[5];
         String[] productNames = {"Coffee", "Computer", "Apple", "Dress", "Fairy-tale book"};

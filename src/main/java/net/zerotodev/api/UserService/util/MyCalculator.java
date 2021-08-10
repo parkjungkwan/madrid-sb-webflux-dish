@@ -1,6 +1,6 @@
 package net.zerotodev.api.UserService.util;
 
-public class MyCalculator {
+public final class MyCalculator {
     public int plus(int a, int b){
         return a+b;
     }

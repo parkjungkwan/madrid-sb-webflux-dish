@@ -1,9 +1,7 @@
 package net.zerotodev.api.UserService.person;
-
 import lombok.Data;
 
-@Data
-public class Person {
+@Data public final class Person {
     private String regiNum;
     private String passNum;
 
